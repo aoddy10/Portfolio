@@ -1,0 +1,25 @@
+@import "../custom.scss";
+
+.Sidebar {
+  width: 400px;
+}
+
+.Sidebar__ProfileImage {
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+}
+
+// .Sidebar_SectionHeader_Dotted {
+//   border: none;
+//   border-top: 1px dotted #f00;
+//   color: #fff;
+//   background-color: #fff;
+//   height: 1px;
+//   width: 50%;
+// }
+
+.Sidebar__Interest img {
+  width: 42px;
+  height: 42px;
+}
