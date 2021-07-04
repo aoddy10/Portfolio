@@ -1,130 +1,83 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Sidebar.scss";
-import ProfileImage from "../images/ProfileImage.jpg";
-import { ProgressBar } from "react-bootstrap";
+import profileImage from "../images/Iyawarin.jpg";
+import { useStateValue } from "../utils/StateProvider";
 
 function Sidebar() {
+  const [{ sidebar }, dispatch] = useStateValue();
+  const [profileSection, setProfileSection] = useState(sidebar[0]);
+  const [softwareSkillSection, setSoftwareSkillSection] = useState(sidebar[1]);
+  const [languageSection, setLanguageSection] = useState(sidebar[2]);
+  const [interestSection, setInterestSection] = useState(sidebar[3]);
+
   return (
-    <div className="Sidebar bg-secondary text-white">
-      {/* Profile Image */}
-      <img className="Sidebar__ProfileImage" src={ProfileImage} alt="Profile" />
+    <div className="Sidebar flex-column">
+      <img className="ProfileImage" src={profileImage} alt="" />
 
-      {/* Profile content */}
-      <div className="Sidebar__Section p-4">
-        <div className="Sidebar__SectionTitle d-flex">
-          <h3 className="pr-4">PROFILE</h3>
-          <h3>...............</h3>
+      {/* profile */}
+      {profileSection ? (
+        <div className="Section flex-column">
+          <div className="Title">{profileSection.title}</div>
+          <div className="Content">{profileSection.content}</div>
         </div>
-        <div className="Sidebar__SectionContent mt-3">
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a
-            tincidunt diam. Ut maximus fermentum sem, at pharetra mi iaculis
-            iaculis. Praesent viverra sit amet turpis sed finibus. Sed eleifend
-            eros eget porttitor blandit.
-          </span>
-        </div>
-      </div>
+      ) : (
+        ""
+      )}
 
-      {/* Developer skill */}
-      <div className="Sidebar__Section p-4">
-        <div className="Sidebar__SectionTitle d-flex">
-          <h3 className="pr-4">DEVELOPER SKILLS</h3>
-          <h3>...............</h3>
+      {/* sofeware skills */}
+      {softwareSkillSection ? (
+        <div className="Section flex-column">
+          <div className="Title">{softwareSkillSection.title}</div>
+          {softwareSkillSection.content.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="List flex-row justify-content-between"
+              >
+                <div className="List__title">{item.skillgroup}</div>
+                <div className="List__detail">{item.skill}</div>
+              </div>
+            );
+          })}
         </div>
-        <div className="Sidebar__SectionContent mt-3">
-          <div className="mb-2">
-            <div>HTML</div>
-            <div>
-              <ProgressBar now={90}></ProgressBar>
-            </div>
-          </div>
-          <div className="mb-2">
-            <div>React</div>
-            <div>
-              <ProgressBar now={80}></ProgressBar>
-            </div>
-          </div>
-          <div className="mb-2">
-            <div>Angular</div>
-            <div>
-              <ProgressBar now={70}></ProgressBar>
-            </div>
-          </div>
-          <div className="mb-2">
-            <div>Python</div>
-            <div>
-              <ProgressBar now={60}></ProgressBar>
-            </div>
-          </div>
-        </div>
-      </div>
+      ) : (
+        ""
+      )}
 
-      {/* Language skill */}
-      <div className="Sidebar__Section p-4">
-        <div className="Sidebar__SectionTitle d-flex">
-          <h3 className="pr-4">LANGUAGE SKILLS</h3>
-          <h3>...............</h3>
+      {/* Language */}
+      {languageSection ? (
+        <div className="Section flex-column">
+          <div className="Title">{languageSection.title}</div>
+          {languageSection.content.map((item, index) => {
+            return (
+              <div key={index} className="List">
+                <div className="List__title">{item}</div>
+              </div>
+            );
+          })}
         </div>
-        <div className="Sidebar__SectionContent mt-3">
-          <div className="mb-2">
-            <div>Thai</div>
-            <div>
-              <ProgressBar now={90}></ProgressBar>
-            </div>
-          </div>
-          <div className="mb-2">
-            <div>English</div>
-            <div>
-              <ProgressBar now={70}></ProgressBar>
-            </div>
-          </div>
-        </div>
-      </div>
+      ) : (
+        ""
+      )}
 
-      {/* Best award */}
-      <div className="Sidebar__Section p-4">
-        <div className="Sidebar__SectionTitle d-flex">
-          <h3 className="pr-4">BEST AWARDS</h3>
-          <h3>...............</h3>
-        </div>
-        <div className="Sidebar__SectionContent mt-3">
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a
-            tincidunt diam. Ut maximus fermentum sem, at pharetra mi iaculis
-            iaculis. Praesent viverra sit amet turpis sed finibus. Sed eleifend
-            eros eget porttitor blandit.
-          </span>
-        </div>
-      </div>
-
-      {/* Interests */}
-      <div className="Sidebar__Section p-4">
-        <div className="Sidebar__SectionTitle d-flex">
-          <h3 className="pr-4">INTERESTS</h3>
-          <h3>...............</h3>
-        </div>
-        <div className="Sidebar__SectionContent mt-3 d-flex justify-content-between">
-          <div className="Sidebar__Interest d-flex flex-column justify-content-center align-content-center">
-            <img src="" alt="Travel" />
-            <span>TRAVEL</span>
-          </div>
-
-          <div className="Sidebar__Interest d-flex flex-column justify-content-center align-content-center">
-            <img src="" alt="Game" />
-            <span>GAME</span>
-          </div>
-
-          <div className="Sidebar__Interest d-flex flex-column justify-content-center align-content-center">
-            <img src="" alt="Football" />
-            <span>FOOTBALL</span>
-          </div>
-
-          <div className="Sidebar__Interest d-flex flex-column justify-content-center align-content-center">
-            <img src="" alt="Crypto" />
-            <span>CRYPTO</span>
+      {/* Interesting */}
+      {interestSection ? (
+        <div className="Section flex-column">
+          <div className="Title">{interestSection.title}</div>
+          <div className="flex-row justify-content-around">
+            {interestSection.content.map((item, index) => {
+              return (
+                <div key={index} className="List flex-column align-item-center">
+                  <img src={"../images/" + item.pic} alt="" />
+                  <div className="">{item.name}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
-      </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

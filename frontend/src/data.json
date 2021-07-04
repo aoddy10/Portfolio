@@ -1,0 +1,152 @@
+{
+  "portfolio": {
+    "sidebar": [
+      {
+        "title": "Profile",
+        "content": "Full-stack developer. Web base application. ReactJS, AnuglarJS, NodeJS, ExpressJS, MSSQL, AWS Amazon."
+      },
+      {
+        "title": "Software Skills",
+        "content": [
+          {
+            "skillgroup": "Web App",
+            "skill": "ReactJS, AngularJS, NodeJS, Express Framework, HTML5, CSS, JAVA script, Python"
+          },
+          {
+            "skillgroup": "Programming",
+            "skill": "C++, C#, JAVA, Java Script, PHP, Visual Basic, Type script"
+          },
+          {
+            "skillgroup": "Mobile App",
+            "skill": "React Native, Xcode, Android Studio, RESTFul Web Service, JSON Data, API, JAX-RS, Glassfish"
+          },
+          {
+            "skillgroup": "Cloud base",
+            "skill": "AWS EC2, Firebase"
+          },
+          {
+            "skillgroup": "Machine Learning",
+            "skill": "TensorFlow"
+          },
+          {
+            "skillgroup": "Database",
+            "skill": "MS-SQL, MySQL, Access, No-SQL"
+          },
+          {
+            "skillgroup": "Other",
+            "skill": "Docker, GitHub, Trello, Slack"
+          }
+        ]
+      },
+      {
+        "title": "Language",
+        "content": ["English", "Thai"]
+      },
+      {
+        "title": "Interests",
+        "content": [
+          {
+            "pic": "",
+            "name": "Gaming"
+          },
+          {
+            "pic": "",
+            "name": "Football"
+          },
+          {
+            "pic": "",
+            "name": "Investment"
+          }
+        ]
+      }
+    ],
+    "content": [
+      {
+        "section": "Profile Detail",
+        "detail": {
+          "fistname": "Anirut",
+          "lastname": "Puangkingkaew",
+          "position": "Frontend and Fullstack Web App Developer",
+          "Address": "2001/148 Elizabeth St, Sydney NSW 2000",
+          "phone": "+61 410805548",
+          "email": "vobi69p@gmail.com",
+          "linkedin": "linkedin.com/in/anirut-puangkingkaew-159a3699"
+        }
+      },
+      {
+        "section": "It Job Experiences",
+        "detail": [
+          {
+            "company": "Sydney College",
+            "position": "COMPUTER NETWORK AND SYSTEM ENGINEER",
+            "workingPeriod": "Feb 2021 - Present",
+            "shortDesc": "Establishes networking environment; Analysing, developing and evaluating various operation system designs; Secures network system; Manage cloud server and hosting;"
+          },
+          {
+            "company": "Australian International College",
+            "position": "COMPUTER NETWORK AND SYSTEM ENGINEER",
+            "workingPeriod": "Jun 2017 – Feb 2021",
+            "shortDesc": "Maintain and monitor computer network and school system, application software; Manage cloud server and student database; Develop and maintain school website; Maintain and update school network system;"
+          },
+          {
+            "company": "TheStudio",
+            "position": "FULLSTACK WEB DEVELOPER",
+            "workingPeriod": "Feb 2020 – Oct 2020",
+            "shortDesc": "Develop and update the website; Integrate website with another system such as marketing tool;"
+          },
+          {
+            "company": "C.P.D. Sheetboard Co.,Ltd.",
+            "position": "COMPUTER SYSTEM ENGINEER",
+            "workingPeriod": "Aug 2000 – Dec 2013",
+            "shortDesc": "Design, implementation and management of cloud technologies; Network security; interpreting system design briefs and architecture specification, model and diagrams for development of computer networks;"
+          }
+        ]
+      },
+      {
+        "section": "Education",
+        "detail": [
+          {
+            "college": "Academy of Information Technology",
+            "degree": "BACHELOR OF IT MOBILE APPLICATION DEVELOPMENT",
+            "studyPeriod": "Oct 2017 – Jun 2020"
+          },
+          {
+            "college": "Australian Computer Society",
+            "degree": "DIPLOMA OF IT SOFTWARE DEVELOPMENT",
+            "studyPeriod": "Jul 2016 – Jun 2017"
+          },
+          {
+            "college": "Maejo University",
+            "degree": "BACHELOR IN BUSINESS ADMINISTRATION",
+            "studyPeriod": "May 1998 – Mar 2000"
+          }
+        ]
+      },
+      {
+        "section": "References",
+        "detail": [
+          {
+            "name": "CHANTAL ABOUCHAR",
+            "position": "Founder, CEO: The Studio",
+            "email": "chantal@thestudio.org.au",
+            "phone": "+61 438304090",
+            "linkedin": "https://www.linkedin.com/in/ chantalabouchar"
+          },
+          {
+            "name": "MARY ANNE TUAZON",
+            "position": "Community & Events Coordinator: The Studio",
+            "email": "mary@thestudio.org.au",
+            "phone": "+61 428111223",
+            "linkedin": "http://www.linkedin.com/in/mary-anne- tuazon"
+          },
+          {
+            "name": "LAVINA R LOBO",
+            "position": "Trainer: Education Centre of Australia partnered with ACS",
+            "phone": "+61 430770683",
+            "linkedin": "https://www.linkedin.com/in/lavinadsouza"
+          }
+        ]
+      }
+    ]
+  }
+}

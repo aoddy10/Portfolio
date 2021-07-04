@@ -1,11 +1,21 @@
 import "./App.scss";
-import Homepage from "./components/Homepage.js";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <Homepage></Homepage>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

@@ -1,25 +1,48 @@
-@import "../custom.scss";
+@import "../styles/colors";
+@import "../styles/main.scss";
 
 .Sidebar {
   width: 400px;
-}
+  background-color: $bg-dark;
+  color: #ffffff;
 
-.Sidebar__ProfileImage {
-  height: 400px;
-  width: 400px;
-  object-fit: contain;
-}
+  .ProfileImage {
+    background-color: black;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
 
-// .Sidebar_SectionHeader_Dotted {
-//   border: none;
-//   border-top: 1px dotted #f00;
-//   color: #fff;
-//   background-color: #fff;
-//   height: 1px;
-//   width: 50%;
-// }
+  .Section {
+    padding: 16px;
 
-.Sidebar__Interest img {
-  width: 42px;
-  height: 42px;
+    .Title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    .Content {
+      color: $text-secondary;
+      width: 100%;
+      word-wrap: normal;
+    }
+
+    .List {
+      margin-bottom: 16px;
+
+      .List__title {
+        color: $text-secondary;
+      }
+      .List__detail {
+        width: 200px;
+      }
+      img {
+        width: 42px;
+        object-fit: contain;
+        padding-bottom: 8px;
+      }
+    }
+  }
 }
