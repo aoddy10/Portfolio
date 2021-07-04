@@ -64,17 +64,17 @@
       {
         "section": "Profile Detail",
         "detail": {
-          "fistname": "Anirut",
-          "lastname": "Puangkingkaew",
+          "firstName": "Anirut",
+          "lastName": "Puangkingkaew",
           "position": "Frontend and Fullstack Web App Developer",
-          "Address": "2001/148 Elizabeth St, Sydney NSW 2000",
+          "address": "2001/148 Elizabeth St, Sydney NSW 2000",
           "phone": "+61 410805548",
           "email": "vobi69p@gmail.com",
-          "linkedin": "linkedin.com/in/anirut-puangkingkaew-159a3699"
+          "linkedIn": "linkedin.com/in/anirut-puangkingkaew-159a3699"
         }
       },
       {
-        "section": "It Job Experiences",
+        "section": "Experiences",
         "detail": [
           {
             "company": "Sydney College",
@@ -103,7 +103,7 @@
         ]
       },
       {
-        "section": "Education",
+        "section": "Educations",
         "detail": [
           {
             "college": "Academy of Information Technology",
@@ -130,20 +130,20 @@
             "position": "Founder, CEO: The Studio",
             "email": "chantal@thestudio.org.au",
             "phone": "+61 438304090",
-            "linkedin": "https://www.linkedin.com/in/ chantalabouchar"
+            "linkedIn": "https://www.linkedin.com/in/chantalabouchar"
           },
           {
             "name": "MARY ANNE TUAZON",
             "position": "Community & Events Coordinator: The Studio",
             "email": "mary@thestudio.org.au",
             "phone": "+61 428111223",
-            "linkedin": "http://www.linkedin.com/in/mary-anne- tuazon"
+            "linkedIn": "http://www.linkedin.com/in/mary-anne-tuazon"
           },
           {
             "name": "LAVINA R LOBO",
             "position": "Trainer: Education Centre of Australia partnered with ACS",
             "phone": "+61 430770683",
-            "linkedin": "https://www.linkedin.com/in/lavinadsouza"
+            "linkedIn": "https://www.linkedin.com/in/lavinadsouza"
           }
         ]
       }

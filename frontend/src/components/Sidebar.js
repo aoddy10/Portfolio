@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Sidebar.scss";
-import profileImage from "../images/Iyawarin.jpg";
+import profileImage from "../images/Anirut.jpg";
 import { useStateValue } from "../utils/StateProvider";
 
 function Sidebar() {

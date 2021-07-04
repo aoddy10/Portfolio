@@ -3,4 +3,85 @@
 
 .Content {
   width: 600px;
+  color: $text-primary;
+
+  .Section {
+    width: 100%;
+    word-wrap: normal;
+
+    img {
+      width: 42px;
+      height: 42px;
+      object-fit: cover;
+    }
+    .Header {
+      font-size: 1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .List {
+      .LeftSide {
+        width: 200px;
+      }
+      .RightSide {
+        width: 200px;
+      }
+      .Title {
+        font-weight: 800;
+      }
+      .Content {
+        color: $text-third;
+      }
+    }
+  }
+
+  .Section__Profile {
+    margin-top: 40px;
+
+    .Headline {
+      background-color: $bg-primary;
+      padding: 10px 30px 10px 30px;
+      text-transform: uppercase;
+
+      .FirstName {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+      .LastName {
+        color: $text-primary;
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+      .Position {
+        color: #ffffff;
+      }
+    }
+    .Contact {
+      padding: 30px;
+      color: $text-third;
+
+      img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        margin-right: 8px;
+      }
+
+      .List {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .List:first-child {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  .Section__Experience,
+  .Section__Education,
+  .Section__References {
+    padding: 10px 30px 10px 30px;
+  }
 }
